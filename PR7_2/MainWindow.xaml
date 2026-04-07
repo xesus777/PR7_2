@@ -25,7 +25,7 @@
         <TextBlock Grid.Row="0" Text="ROT13 Шифрование/Дешифрование" 
                    FontSize="16" FontWeight="Bold" 
                    HorizontalAlignment="Center" Margin="0,0,0,10"/>
-
+ 
         <!-- Поле ввода -->
         <TextBlock Grid.Row="1" Text="Входной текст:" Margin="0,5"/>
         <TextBox Grid.Row="2" x:Name="InputTextBox" 
