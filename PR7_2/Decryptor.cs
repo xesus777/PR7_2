@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 namespace PR7_2
 {
     /// <summary>
-    /// Класс для шифрования текста методом ROT13
+    /// Класс для дешифрования текста методом ROT13
     /// </summary>
-    public class Encryptor
+    public class Decryptor
     {
         /// <summary>
-        /// Шифрование текста методом ROT13
+        /// Дешифрование текста методом ROT13 
         /// </summary>
-        /// <param name="input">Входной текст</param>
-        /// <returns>Зашифрованный текст</returns>
+        /// <param name="input">Входной зашифрованный текст</param>
+        /// <returns>Дешифрованный текст</returns>
         /// <exception cref="ArgumentNullException">Выбрасывается при null</exception>
         /// <exception cref="ArgumentException">Выбрасывается при пустой строке</exception>
-        public string Encrypt(string input)
+        public string Decrypt(string input)
         {
             if (input == null)
                 throw new ArgumentNullException(nameof(input), "Входная строка не может быть null");
@@ -42,9 +42,9 @@ namespace PR7_2
         }
 
         /// <summary>
-        /// Проверка, можно ли шифровать текст (только латиница)
+        /// Проверка, можно ли дешифровать текст
         /// </summary>
-        public bool IsValidForEncrypt(string input)
+        public bool IsValidForDecrypt(string input)
         {
             if (string.IsNullOrEmpty(input))
                 return false;
